@@ -1,0 +1,40 @@
+{
+  "CV": 
+  {
+   "Summary": 
+    [
+      "More than 14 years of working experience in the Information Technology field, especially in developing software applications for various industries including manufacturing, education, finance and Oil & Gas sectors",
+      "Has demonstrated capabilities in terms of software application development and high-level of commitment in assuring deliverables are of good quality and is delivered within stipulated period",
+      "A focused and organized leader, and a cooperative and helpful team player"
+    ],
+     
+   "Personal Details": 
+    {
+      "Name": "Durairaj Veera Sinnaiah",
+      "Address": "Bandar Putra Permai, Seri Kembangan, Selangor",
+      "Phone": "+6 016 3013936",
+      "Email": "coolraj80@gmail.com",
+      "Current Position": "Software Development Team Leader and Technical Analyst"
+    },    
+
+    "Skills": 
+    {
+      "Programming Language": 
+      [
+        "ASP/ASP.Net",
+        "VB6/VB.Net",
+        "C#",
+        "PHP"
+      ],
+
+      "Databases & Softwares": 
+      [
+        "Microsoft SQL Server",
+        "MySql",
+        "Microsoft Visual Studio 2010",
+        "Microsoft Team Foundation Server",
+        "Microsoft SQL Server Reporting Service (SSRS)"
+      ]
+    }
+  }
+}
