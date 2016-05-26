@@ -8,38 +8,18 @@ foreach ($json_a as $title => $tabNames)
 	$i = 0;
 	foreach ($tabNames as $tabName => $tabTitle)
 	{
-		echo $tabName . "<br>";
 		$tabNameList[$i] = $tabName;		
+		$j = 0;
 
 		foreach ($tabTitle as $detail => $detailValue)
 		{
-			if (is_int($detail))
-			{
-				$levelOne = 
-			}
-			echo "> " . $detail . " : " . $detailValue . "<br>";
+			$label[$i][$j] = $detail;
+			$value[$i][$j] = $detailValue;			
+			$j++;
 		}
 		$i++;
 	}
 }
-
-echo count($tabNameList);
-/*
-foreach ($json_a as $file_contents => $element) 
-{
-    $skills = $element['Skills'];
-}
-
-foreach ($skills as $skillElement => $skillDetails)
-{	
-	echo $skillElement . " : <br>";
-	
-	foreach ($skillDetails as $skillDetail)
-	{
-		echo " > " . $skillDetail . "<br>";
-	}
-}
-*/
 ?>
 
 
@@ -59,14 +39,20 @@ foreach ($skills as $skillElement => $skillDetails)
         <h2>CV</h2>
         <ul class="nav nav-pills">
 			<?php
-				foreach ($tabNameList as $tabName)
+				for ($i=0;$i<count($tabNameList);$i++)
 				{
-					$tabNameId = $tabName;
-					if (strpos($tabName, " ") > 0)
-					{						
-						$tabNameId = str_replace(" ", "_", $tabName);
+					$tabNameId = $tabNameList[$i];
+					
+					if (strpos($tabNameId, " ") > 0)
+					{
+						$tabNameId = str_replace(" ", "_", $tabNameId);
 					}
-					echo "<li><a data-toggle=\"pill\" href=\"#" . $tabNameId . "\">" . $tabName . "</a></li>";
+					if ($i==0)
+						echo "<li class=\"active\">";
+					else
+						echo "<li>";
+					
+					echo "<a data-toggle=\"pill\" href=\"#" . $tabNameId . "\">" . $tabNameList[$i] . "</a></li>";
 				}
 			?>            
         </ul>
@@ -74,17 +60,34 @@ foreach ($skills as $skillElement => $skillDetails)
         <div class="tab-content">
 			
 			<?php
-				foreach ($tabNameList as $tabName)
+				for ($i=0;$i<count($tabNameList);$i++)
 				{					
-					$tabNameId = $tabName;
-					if (strpos($tabName, " ") > 0)
+					$tabNameId = $tabNameList[$i];
+					
+					if (strpos($tabNameId, " ") > 0)
 					{
-						$tabNameId = str_replace(" ", "_", $tabName);
+						$tabNameId = str_replace(" ", "_", $tabNameId);
 					}
-					echo "<div id=\"" . $tabNameId . "\" class=\"tab-pane fade in\">";
-					echo "<h3>" . $tabName . "</h3>";
-					echo "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-							incididunt ut labore et dolore magna aliqua.</p>";
+
+					if ($i==0)
+						echo "<div id=\"" . $tabNameId . "\" class=\"tab-pane fade in active\">";
+					else
+						echo "<div id=\"" . $tabNameId . "\" class=\"tab-pane fade in\">";
+					
+					echo "<h3>" . $tabNameList[$i] . "</h3>";
+
+					echo "<table width=\"100%\" style=\"font-size:small;border-spacing:10px;border-collapse:separate;\">";
+					for ($j=0;$j<count($label);$j++)
+					{						
+						echo "<tr>";						
+						if (!is_int($label[$i][$j]))
+						{
+							echo "<td width=10%><b>" . $label[$i][$j] . "</td>";
+						}
+						echo "<td width=90%>" . $value[$i][$j] . "</td></tr>";
+					}
+					echo "</table>";
+					
 					echo "</div>";
 				}
 			?>
