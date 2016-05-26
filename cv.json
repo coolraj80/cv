@@ -15,7 +15,7 @@
       "Phone": "+6 016 3013936",
       "Email": "coolraj80@gmail.com",
       "Current Position": "Software Development Team Leader and Technical Analyst"
-    },    
+    },
 
     "Skills": 
     {
@@ -27,7 +27,7 @@
         "PHP"
       ],
 
-      "Databases & Softwares": 
+      "Databases And Softwares": 
       [
         "Microsoft SQL Server",
         "MySql",
@@ -35,6 +35,54 @@
         "Microsoft Team Foundation Server",
         "Microsoft SQL Server Reporting Service (SSRS)"
       ]
+    },
+
+    "Certifications And Awards": 
+    {
+      "Certifications": 
+      [
+        "MCP in Designing and Implementing Databases with Microsoft SQL Server 2000 Enterprise Edition (Year 2005)",
+        "MCP in Developing and Implementing Web Applications with Microsoft Visual Basic .NET and Microsoft Visual Studio .NET",
+        "MCP in Developing and Implementing Windows-Based Applications with Microsoft Visual Basic .NET and Microsoft Visual Studio .NET",
+        "ITIL v3 Foundation (2011)"
+      ],
+
+      "Awards Received": 
+      [
+        "1",
+        "2"
+      ]
+    },
+
+    "Professional Experiences": 
+    {
+      "June 2013 to Present": 
+      {
+        "Company": "CGI (Malaysia)",
+        "Position": "Software Development Team Lead",
+        "": "Manage a team of 8 developers with and manage the development, testing and deployment of the Fuels Pricing application",
+        "Role and Responsibilities": 
+        [
+          "manage the assignment and tracking of Project Tasks for  the development team",
+          "performing analysis of requirements",
+          "performing study of best approach to devise the appropriate solution for the requirements"
+        ]
+      },
+      
+      "Feb 2012 to June 2013": 
+      {        
+        "Company": "Tech Mahindra (Malaysia)",
+        "Position": "Software Development Team Lead",
+        "": "Manage a team of 8 developers with and completed 3 complex financial-backend application projects.",
+        "Role and Responsibilities": 
+        [
+          "manage the assignment and tracking of Project Tasks for  the development team",
+          "performing analysis of requirements",
+          "performing study of best approach to devise the appropriate solution for the requirements"
+        ]
+
+      }           
     }
+    
   }
 }

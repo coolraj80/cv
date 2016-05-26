@@ -22,21 +22,29 @@ foreach ($json_a as $title => $tabNames)
 }
 ?>
 
-
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <title>Bootstrap Case</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><?=$title?></title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+	<style>
+		table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+
+		th, td {
+			text-align: left;
+			padding: 8px;
+		}				
+	</style>
 </head>
 <body>
 
     <div class="container">
-        <h2>CV</h2>
+        <h2><u><?=$title?></u></h2>
+		<br>
         <ul class="nav nav-pills">
 			<?php
 				for ($i=0;$i<count($tabNameList);$i++)
@@ -74,19 +82,90 @@ foreach ($json_a as $title => $tabNames)
 					else
 						echo "<div id=\"" . $tabNameId . "\" class=\"tab-pane fade in\">";
 					
-					echo "<h3>" . $tabNameList[$i] . "</h3>";
 
-					echo "<table width=\"100%\" style=\"font-size:small;border-spacing:10px;border-collapse:separate;\">";
+					echo "<br><table><tr valign=top><td width=20%><ul class=\"nav nav-pills\">";
+
 					for ($j=0;$j<count($label);$j++)
-					{						
-						echo "<tr>";						
+					{																
 						if (!is_int($label[$i][$j]))
 						{
-							echo "<td width=10%><b>" . $label[$i][$j] . "</td>";
-						}
-						echo "<td width=90%>" . $value[$i][$j] . "</td></tr>";
+							if (is_array($value[$i][$j]))
+							{							
+								$tabNameId = $label[$i][$j];
+								if (strpos($label[$i][$j], " ") > 0)
+								{
+									$tabNameId = str_replace(" ", "_", $label[$i][$j]);
+								}
+								if ($j==0)
+									echo "<li class=\"active\">";
+								else
+									echo "<li>";
+					
+								echo "<a data-toggle=\"pill\" href=\"#" . $tabNameId . "\">" . $label[$i][$j] . "</a></li>";															
+							}
+							
+							else
+							{
+								echo "<b>" . $label[$i][$j] . "</b><br><br>";								
+							}								
+						}										
 					}
-					echo "</table>";
+					echo "</ul></td>";
+
+					echo "<td width=90%>";
+					echo "<div class=\"tab-content\">";
+
+					for ($j=0;$j<count($value);$j++)
+					{
+						if (is_array($value[$i][$j]))
+						{												
+							$tabNameId = $label[$i][$j];
+							if (strpos($label[$i][$j], " ") > 0)
+							{
+								$tabNameId = str_replace(" ", "_", $label[$i][$j]);
+							}	
+							if ($j==0)
+								echo "<div id=\"" . $tabNameId . "\" class=\"tab-pane fade in active\">";
+							else
+								echo "<div id=\"" . $tabNameId . "\" class=\"tab-pane fade in\">";
+
+							echo "<table>";
+							foreach ($value[$i][$j] as $eachValueLabel => $eachValue)
+							{								
+								if (!is_int($eachValueLabel))
+								{
+									echo "<tr valign=top><td width=10%><b>" . $eachValueLabel . "</b></td><td align=left width=90%>";
+									if (is_array($eachValue))
+									{
+										echo "<ul>";
+										foreach ($eachValue as $eachValueInArray)
+										{
+											echo "<li>" . $eachValueInArray . "</li>";
+										}
+										echo "</ul>";
+									}
+
+									else
+									{
+										 echo $eachValue;
+									}
+									echo  "</td></tr>";
+								}
+								else
+								{
+									echo "<tr><td>" . $eachValue . "</td></tr>";																		
+								}								
+							}							
+							echo "</table></div>";
+						}
+
+						else
+						{
+							echo $value[$i][$j] . "<br><br>";
+						}						
+					}
+
+					echo "</div></td></tr></table>";
 					
 					echo "</div>";
 				}
