@@ -1,5 +1,5 @@
 {
-  "CV": 
+  "Durai's CV": 
   {
    "Summary": 
     [
@@ -49,40 +49,207 @@
 
       "Awards Received": 
       [
-        "1",
-        "2"
+        "<b>Panasonic - Bronze Group Performance Award : </b>For sucessfull implementation of Medom/Medem Web & Knowledge Management Portal",
+        "<b>Mahindra Satyam - Pat On Back : </b>Tremendous effort in responding to client critical needs on 3 MasterCard project",
+        "<b>CGI - Individual Award 2014 : </b>Has led team of developers through Development, ensuring confidence in them, perform efficient delivery, shown dedicatin in bringing success to the team",
+        "<b>CGI - Individual Award 2015 : </b>Has demonstrated willingness to work with Vitol Support and provided excellent examle of how co-operatin can yield results during their time of need"
       ]
     },
 
-    "Professional Experiences": 
-    {
-      "June 2013 to Present": 
-      {
+    "Professional Experiences": {
+      "June 2013 to Present": {
         "Company": "CGI (Malaysia)",
         "Position": "Software Development Team Lead",
         "": "Manage a team of 8 developers with and manage the development, testing and deployment of the Fuels Pricing application",
-        "Role and Responsibilities": 
-        [
+        "Role and Responsibilities": [
           "manage the assignment and tracking of Project Tasks for  the development team",
           "performing analysis of requirements",
-          "performing study of best approach to devise the appropriate solution for the requirements"
+          "performing study of best approach to devise the appropriate solution for the requirements",
+          "assign development modules to team members",
+          "track progress of project",
+          "performing development of the codes for the solution",
+          "create and manage reports in SSRS",
+          "manage the project team members & resources",
+          "participate in Scrum methodology implementation",
+          "organize daily stand-up meeting with team (Scrum)"
+        ],
+
+        "Tools and Technologies": [
+          "C#, T-SQL, ASP.Net",
+          "MVC Design Pattern",
+          "Microsoft Visual Studio 2015",
+          "Microsoft Team Foundation Server",
+          "Microsoft SQL Server 2008",
+          "Microsoft SQL Server Reporting Service (SSRS)"
         ]
       },
-      
-      "Feb 2012 to June 2013": 
-      {        
+
+      "Feb 2012 to June 2013": {
         "Company": "Tech Mahindra (Malaysia)",
         "Position": "Software Development Team Lead",
         "": "Manage a team of 8 developers with and completed 3 complex financial-backend application projects.",
-        "Role and Responsibilities": 
-        [
-          "manage the assignment and tracking of Project Tasks for  the development team",
+        "Role and Responsibilities": [
           "performing analysis of requirements",
-          "performing study of best approach to devise the appropriate solution for the requirements"
+          "performing study of best approach to devise the appropriate solution for the requirements",
+          "assign development modules to team members",
+          "track progress of project",
+          "performing development of the codes for the solution",
+          "develop requirement and design documents",
+          "manage the project team members & resources",
+          "conduct technical trainings to developers"
+        ],
+
+        "Tools and Technologies": [
+          "C#, T-SQL, VB.Net",
+          "MVC Design Pattern",
+          "Microsoft Visual Studio 2010",
+          "Microsoft SQL Server 2008"
         ]
 
-      }           
-    }
+      },
+
+      "Oct 2010 to Feb 2012": {
+        "Company": "Logica (Malaysia)",
+        "Position": "Application Developer",
+        "": "Work in a team of 8 to develop enhancements to a Fuels Pricing application",
+        "Role and Responsibilities": [
+          "performing analysis of requirements from users",
+          "performing study of best approach to devise the appropriate solution for the requirements",
+          "performing development of the codes for the solution"
+        ],
+
+        "Tools and Technologies": [
+          "C#, T-SQL",
+          "MVC Design Pattern",
+          "Microsoft Visual Studio 2010",
+          "Microsoft SQL Server 2008",
+          "Microsoft Team Foundation Server"
+        ]
+      },
+
+      "Apr 2008 to Sep 2010": {
+        "Company": "AtoS Origin (Malaysia) ",
+        "Position": "Associate Consultant",
+        "": "Work in a team of 4, develop new features and enhancements to Card Centre reports and applications",
+        "Role and Responsibilities": [
+          "performing analysis of requirements from users",
+          "performing study of best approach to devise the appropriate solution for the requirements",
+          "performing development of the codes for the solution"
+        ],
+
+        "Tools and Technologies": [
+          "ASP.Net, VB.Net, T-SQL",
+          "Microsoft Visual Studio",
+          "Microsoft SQL Server"
+        ]
+      },
+
+      "Sep 2006 to Mar 2008": {
+        "Company": "Citibank (Singapore)",
+        "Position": "Application Developer",
+        "": "Work in a team of 3, develop new features and enhancements to Project Management reports and applications",
+        "Role and Responsibilities": [
+          "performing analysis of requirements from users",
+          "performing study of best approach to devise the appropriate solution for the requirements",
+          "performing development of the codes and/or SQL objects for the proposed solution"
+        ],
+
+        "Tools and Technologies": [
+          "ASP.Net, VB.Net, T-SQL",
+          "Microsoft Visual Studio",
+          "Microsoft SQL Server"
+        ]
+      },
+
+      "Jan 2006 to Aug 2006": {
+        "Company": "Informatics Holdings (Singapore)",
+        "Position": "Systems Programmer",
+        "": "Work in a team of 5, develop new features and enhancements to Student Management & Billing reports and applications",
+        "Role and Responsibilities": [
+          "debugging of the existing Information Management System",
+          "development of additional modules for the existing Information Management System"
+        ],
+
+        "Tools and Technologies": [
+          "ASP.Net, T-SQL",
+          "Microsoft Visual Studio",
+          "Microsoft SQL Server"
+        ]
+      },
+
+      "May 2002 to Dec 2005": {
+        "Company": "Panasonic Electronic Devices (Malaysia)",
+        "Position": "Senior IT Executive",
+        "": "Work in a team of 3, develop new features and enhancements to support functions related and manufacturing related Web Applications",
+        "Role and Responsibilities": 
+        [
+          "designing new Web & Windows Applications and maintaining existing applications for use in office & manufacturing environment",
+          "partly involved in the installation, administration and maintenance of SQL Server Databases"          
+        ],
+
+        "Tools and Technologies": [
+          "ASP/ASP.Net, VB.Net, T-SQL",
+          "Microsoft Visual Studio",
+          "Microsoft SQL Server"
+        ]
+      }
     
+    },
+
+    "Highest Education": 
+    {
+      "University": "MULTIMEDIA UNIVERSITY, CYBERJAYA",
+      "Degree": "Bachelor of Information Technology",
+      "Major": "Software Engineering",
+      "Years of Study": "1998 - 2002"            
+    },
+
+    "Other Details": 
+    {
+      "Date of Birth": "22nd January 1980",
+      "Nationality": "Malaysian",
+      "Gender": "Male",
+      "Spoken Language": "English, Bahasa Malaysia, Tamil",
+      "Written Language": "English, Bahasa Malaysia, Tamil",
+      "Personal Strength": "Able to adapt easily to various working environments <br>Able to pick up a new programming language/application/system within a fairly short period of time"
+    },
+
+    "References": 
+    {
+      "Reference 1": 
+      {
+        "Name": "MR. KRISHNAKUMAR",
+        "Current": "General Manager, Databridge Communications",
+        "Relationship": "Former Manager at Panasonic",
+        "Telephone": "012-381 3537",
+        "Email": "kumar@databridge.com.my"
+      },
+       "Reference 2": {
+        "Name": "MR. ZAINOL ZAINUDDIN",
+        "Current": "Vice President (Project Management) Bank Muamalat",
+        "Relationship": "Former Manager at Atos Origin",
+        "Telephone": "012-238 8771",
+        "Email": "zainolz2002@yahoo.com"
+      },
+
+      "Reference 3": {
+        "Name": "MR.RAMESH SUPARAMMANAYAM",
+        "Current": "Program Manager, Mahindra Satyam",
+        "Relationship": "Former Manager at Mahindra Satyam",
+        "Telephone": "012-319 5323",
+        "Email": "Ramesh_Suparammanayam@mahindrasatyam.com"
+      },
+
+      "Reference 4": 
+      {
+        "Name": "MR.SURESH VYAVARI",
+        "Current": "Own Business",
+        "Relationship": "Former Manager at CGI",
+        "Telephone": "012-219 6744",
+        "Email": "suresh.vyavari@cgi.com"
+      }
+
+    }      
+  
   }
 }
